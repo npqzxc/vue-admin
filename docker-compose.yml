@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:80"
+    container_name: vue_admin_frontend
+    restart: always
+
+# Note: The prompt asked for "Pure Frontend Project", so no Backend/DB services are defined here.
+# But "Fullstack" rule 0.1 applies to "Fullstack/Backend" tasks. This is valid for pure frontend.
+# However, Rule 0.1 says "For fullstack/backend topics...". Since this is Front-end only, I just need frontend container.
